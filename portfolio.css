@@ -30,6 +30,9 @@ header img{
 width:100px;
 height: 50px;
 margin: 20px;
+position: fixed;
+top:15px;
+left:20px;
 }
 header{
     display: flex;
@@ -37,15 +40,14 @@ header{
     height: 100px;
     background-color:transparent;
     align-items: center;
-    position: fixed;
-    width: 100%;
+    height: 0;
 }
 #nav{
     display: none;
     flex-direction: column;
     justify-content: space-around;
     height: 100vh;
-    position: absolute;
+    position: fixed;
     top:0;
     padding: 20px 100px;
     background-color: white;
@@ -62,6 +64,9 @@ z-index: 99;
 }
 #ham{
     padding: 20px;
+    position: fixed;
+    left:80%;
+    top:30px;
 }
 #ham div{
     width:50px;
@@ -281,7 +286,6 @@ padding: 10px;
     border: 1px #4b5269 solid;
     color: #5c80f7;
  position: relative;
- left:-20%;
 margin-left: 0;
 font-family: 'Libre Baskerville', serif;
 cursor: pointer;
@@ -317,11 +321,7 @@ cursor: pointer;
         margin-bottom: 450px;
     }
 }
-@media only screen and (max-width:509px){
-    #cv{
-       margin-left:45px ;
-    }
-}
+
 @media only screen and (max-width:364px){
     #cv{
         width:200px;
@@ -619,14 +619,14 @@ flex-wrap: wrap;
         margin-bottom:250px;
     }   
 }
-@media only screen and (max-width:760px){
+@media only screen and (max-width:750px){
     #skills1{
-        margin-bottom:450px;
+        margin-bottom:495px;
     }   
 }
 @media only screen and (max-width:500px){
     #skills1{
-        margin-bottom:850px;
+        margin-bottom:500px;
     }   
 }
 
@@ -727,10 +727,10 @@ p:nth-child(1){
 
 @media only screen and (max-width:1500px){
 .tri{
-    opacity: 0;
+   display:none ;
 }
 .tril{
-    opacity: 0;
+  display: none;
 }
 #hedu{
     display: none;
@@ -751,9 +751,10 @@ p:nth-child(1){
     position: absolute;
     left:50%;
     transform: translateX(-50%);
-margin-bottom: 30px;
 }
-
+.tb div ,.fb div ,.sb div{
+    margin-top: 40px;
+}
 }
 @media only screen and (max-width:375px){
 
@@ -1000,7 +1001,11 @@ position: relative;
         top:-140px;
     }
 }
-
+@media only screen and (max-width:445px){
+    #projects{
+      height:500px;
+    }
+}
 
 
                                    /*hobbies*/
@@ -1094,6 +1099,7 @@ z-index: -1;
     display: grid;
     grid-template-columns: 60% 10% 20%;
     z-index: -100;
+    overflow: hidden;
 }
 #phone ,#mail{
     display: none;
@@ -1112,6 +1118,7 @@ z-index: -100;
     font-weight: bold;
     letter-spacing: 4px;
     cursor: pointer;
+    z-index: 999;
 }
 .back p{
     color: black;
@@ -1134,7 +1141,6 @@ font-size: 30px;
 letter-spacing: 30px;
 transition: 0.8s ease-in;
 position: relative;
-z-index: -1;
 }
 #fot i:hover{
     transform: rotate(360deg)
@@ -1279,4 +1285,34 @@ padding: 0;
   #con{
    display: none;
   }
+}
+
+@media only screen and (max-width:450px){
+    header img{
+        position: absolute;
+        top:2px;
+        left:0;
+        width: 70px;
+        height: 40px;
+    }
+}
+@media only screen and (max-width:381px){
+  #ham{
+      left:40%;
+  }
+  #ham div{
+      width:30px;
+  }
+#nav{
+    top:100px;
+    height: 70%;
+    width: 100%;
+    text-align: center;
+}
+#cv{
+    padding: 0;
+        margin: auto;
+
+}
+
 }
