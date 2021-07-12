@@ -7,15 +7,6 @@ ham.onclick = function() {
     menu.classList.toggle("active");
 }
 
-window.addEventListener('scroll', () => {
-    if (window.pageYOffset > 30) {
-        header.style.backgroundColor = 'rgb(186, 186, 243,0.9)';
-        //nav.style.backgroundSize = "100%";
-    }
-    else {
-       header.style.background = "transparent";
-    }
-})
 
 
 
