@@ -65,15 +65,32 @@ z-index: 99;
 #ham{
     padding: 20px;
     position: fixed;
-    left:80%;
+    left:90%;
     top:30px;
+    background-color: rgb(128, 128, 243,0.5);
 }
 #ham div{
     width:50px;
     height:3px;
-    background-color: var(--mainLight);
+    background-color: white;
     position: relative;
 
+}
+@media only screen and (max-width:992px){
+    #ham{
+        padding: 20px;
+        position: fixed;
+        left:80%;
+        top:30px;
+    }
+}
+@media only screen and (max-width:500px){
+    #ham{
+        padding: 20px;
+        position: fixed;
+        left:75%;
+        top:30px;
+    }
 }
 #ham div::after{
     content:'';
