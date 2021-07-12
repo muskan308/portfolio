@@ -873,11 +873,12 @@ position: relative;
 
 @media only screen and (max-width:1506px){
 
-   #projects{
-       position: relative;
-       top:250px;
-       width: 90%;
-   } 
+ #edu{
+     margin-bottom: 450px;
+ }
+ #projects{
+     margin-bottom:0;
+ }
    .mid{
     height: 67%;
 }
@@ -1039,7 +1040,7 @@ z-index: -1;
     margin: auto;
 }
 #projects{
-    margin-bottom: 300px;
+    margin-bottom: 10px;
 }
 }
 
