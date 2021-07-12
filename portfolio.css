@@ -67,6 +67,7 @@ z-index: 99;
     position: fixed;
     left:90%;
     top:30px;
+    z-index: 999;
     background-color: rgb(128, 128, 243,0.5);
 }
 #ham div{
