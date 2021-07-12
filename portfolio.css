@@ -624,9 +624,9 @@ flex-wrap: wrap;
         margin-bottom:495px;
     }   
 }
-@media only screen and (max-width:500px){
+@media only screen and (max-width:499px){
     #skills1{
-        margin-bottom:500px;
+        margin-bottom:850px;
     }   
 }
 
