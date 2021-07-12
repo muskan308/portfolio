@@ -1019,6 +1019,9 @@ position: relative;
         position: relative;
         top:-140px;
     }
+    #projects{
+       height: 550px;
+    }
 }
 @media only screen and (max-width:445px){
     #projects{
